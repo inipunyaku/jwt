@@ -1,0 +1,32 @@
+
+### 
+post http://localhost:3000/users/register HTTP/1.1
+content-type: application/json
+
+{
+    "nama": "jumad2i",
+    "nim": "119770003",
+    "email":"12@gmail.com",
+    "password": "123"
+
+}
+
+
+### 
+post http://localhost:3000/users/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"12@gmail.com",
+    "password": "123"
+
+}
+###
+get http://localhost:3000/halo HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWEiOiJqdW1hZDJpIiwiZW1haWwiOiIxMkBnbWFpbC5jb20iLCJpYXQiOjE2ODY4NDA1NDEsImV4cCI6MTY4Njg0MDU1Nn0.KFeJ8ABZNpk0yH2neZaX52us0aS2PVS8OkWszIHgOmI
+
+###
+get http://localhost:3000/users/token
+
+###
+DELETE http://localhost:3000/users/logout
